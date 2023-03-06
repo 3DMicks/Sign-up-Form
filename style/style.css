@@ -1,0 +1,11 @@
+ :root {
+     --color-bg: #EEEEEE;
+     --color-fg: #170312;
+     --color-ok: #006D77;
+     --color-err: #9A031E;
+     --color-warn: #FA7921;
+ }
+
+ body {
+     background-color: var(--color-bg);
+ }
