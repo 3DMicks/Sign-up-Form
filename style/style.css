@@ -41,6 +41,22 @@ body {
     background-color: red;
 }
 
+.form-content > form {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.form-column-left {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.form-column-right {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
 .form-content label {
     display: block;
 }
