@@ -1,11 +1,46 @@
- :root {
-     --color-bg: #EEEEEE;
-     --color-fg: #170312;
-     --color-ok: #006D77;
-     --color-err: #9A031E;
-     --color-warn: #FA7921;
- }
+:root {
+    --color-bg: #EEEEEE;
+    --color-fg: #170312;
+    --color-ok: #006D77;
+    --color-err: #9A031E;
+    --color-warn: #FA7921;
+}
 
- body {
-     background-color: var(--color-bg);
- }
+body {
+    background-color: var(--color-bg);
+    height: 100vh;
+    margin: 0px;
+}
+
+.content {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.side-panel {
+    height: 100vh;
+    width: 40vw;
+}
+
+#side-image {
+    width: 40vw;
+    height: 100vh;
+    margin: 0px;
+}
+
+.form-panel {
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-content {
+    background-color: red;
+}
+
+.form-content label {
+    display: block;
+}
