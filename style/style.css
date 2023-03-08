@@ -7,9 +7,15 @@
     --color-shadow: #896a8d;
 }
 
+@font-face {
+    font-family: tt2020;
+    src: url("../font/TT_F.ttf");
+}
+
 body {
     background-color: var(--color-bg);
     color: var(--color-fg);
+    font-family: 'Courier New', Courier, monospace;
     height: 100vh;
     margin: 0px;
 }
@@ -23,6 +29,19 @@ body {
     height: 100vh;
     width: 40vw;
     box-shadow: 4px 0px 16px var(--color-shadow);
+}
+
+.side-panel>img {
+    position: relative;
+}
+
+#side-panel-title {
+    position: absolute;
+    font-size: 7rem;
+    font-family: tt2020, 'Courier New', Courier, monospace;
+    color: #594663;
+    top: 10%;
+    left: 10%;
 }
 
 #side-image {
