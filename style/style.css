@@ -12,6 +12,11 @@
     src: url("../font/TT_F.ttf");
 }
 
+@font-face {
+    font-family: neomatrix;
+    src: url("../font/NeomatrixCode.ttf");
+}
+
 body {
     background-color: var(--color-bg);
     color: var(--color-fg);
@@ -67,12 +72,17 @@ body {
     width: 60vw;
     box-shadow: 18px 4px 16px var(--color-shadow), 16px -4px 16px var(--color-shadow);
     padding: 32px;
+    font-family: neomatrix, 'Courier New', Courier, monospace;
 }
 
 .form-content>form {
     display: flex;
     flex-flow: row wrap;
     gap: 64px;
+}
+
+form label {
+    text-transform: uppercase;
 }
 
 .form-column {
