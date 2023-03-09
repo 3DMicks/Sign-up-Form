@@ -14,12 +14,8 @@ document.querySelectorAll("input[type=password]").forEach((pass) => {
     let fp = document.querySelector("#first_password");
     let sp = document.querySelector("#second_password");
     pass.addEventListener("input", (event) => {
-        if (!doesPasswordsMatch()) {
-            fp.classList.add("invalid");
-            sp.classList.add("invalid");
-        } else {
-            fp.classList.remove("invalid");
-            sp.classList.remove("invalid");
-        }
+        let val = doesPasswordsMatch() ? "" : "Mismatched passwords.";
+        fp.setCustomValidity(val);
+        sp.setCustomValidity(val);
     });
 });
