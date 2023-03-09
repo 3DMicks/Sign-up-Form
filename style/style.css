@@ -99,6 +99,35 @@ form label {
     text-transform: uppercase;
 }
 
+#button_div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+form button {
+    border: none;
+    width: 90%;
+    height: 90%;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+form button:hover {
+    background-color: var(--color-ok);
+    color: white;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+form button:active {
+    transition-duration: 0.1s;
+    scale: 1;
+}
+
 input {
     padding: 8px;
     border-radius: 8px;
@@ -106,15 +135,15 @@ input {
 }
 
 input:invalid {
-    border: 2px solid var(--color-err);
+    border: 1px solid var(--color-err);
 }
 
 input:valid {
-    border: 2px solid var(--color-ok);
+    border: 1px solid var(--color-ok);
 }
 
 input[type=password].invalid {
-    border: 2px solid var(--color-err);
+    border: 1px solid var(--color-err);
 }
 
 .form-column {
