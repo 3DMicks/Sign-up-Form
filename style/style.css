@@ -17,10 +17,15 @@
     src: url("../font/NeomatrixCode.ttf");
 }
 
+@font-face {
+    font-family: eptkazoo;
+    src: url("../font/EptKazoo.ttf");
+}
+
 body {
     background-color: var(--color-bg);
     color: var(--color-fg);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
     height: 100vh;
     margin: 0px;
     animation: fadein 2s;
@@ -57,7 +62,7 @@ body {
 #side-panel-title {
     position: absolute;
     font-size: 7rem;
-    font-family: tt2020, 'Courier New', Courier, monospace;
+    font-family: tt2020, monospace;
     color: #594663;
     top: 10%;
     left: 10%;
@@ -73,20 +78,32 @@ body {
     width: 60vw;
     height: 100vh;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#convincing-text {
+    font-size: 2.1rem;
+    padding: 16px;
+    margin: 0px;
+    text-align: justify;
+    font-family: eptkazoo, monospace;
+}
+
+#log-in-footer {
+    margin: 8px;
 }
 
 .form-content {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    background: linear-gradient(#c9bcea, #d0bae8, #d1afdc);
+    background: linear-gradient(#d0beeb, #d5b0df, #cc9fd1);
     width: 60vw;
     box-shadow: 18px 4px 16px var(--color-shadow), 16px -4px 16px var(--color-shadow);
     padding: 32px;
-    font-family: neomatrix, 'Courier New', Courier, monospace;
+    font-family: neomatrix, monospace;
 }
 
 .form-content>form {
