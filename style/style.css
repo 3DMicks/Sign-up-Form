@@ -23,12 +23,12 @@ body {
     font-family: 'Courier New', Courier, monospace;
     height: 100vh;
     margin: 0px;
-    animation: fadein 3s;
+    animation: fadein 2s;
 }
 
 @keyframes fadein {
     from {
-        transform: scale(1.5);
+        transform: scale(1.2);
         opacity: 0;
     }
 
