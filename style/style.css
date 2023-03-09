@@ -1,5 +1,5 @@
 :root {
-    --color-bg: #EEEEEE;
+    --color-bg: #B6A3CE;
     --color-fg: #170312;
     --color-ok: #006D77;
     --color-err: #9A031E;
@@ -83,6 +83,24 @@ body {
 
 form label {
     text-transform: uppercase;
+}
+
+input {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+}
+
+input:invalid {
+    border: 2px solid var(--color-err);
+}
+
+input:valid {
+    border: 2px solid var(--color-ok);
+}
+
+input[type=password].invalid {
+    border: 2px solid var(--color-err);
 }
 
 .form-column {
