@@ -99,7 +99,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    background: linear-gradient(#d0beeb, #d5b0df, #cc9fd1);
+    background: linear-gradient(#cfbfeb, #d8b7e3, #cba5d2);
     width: 60vw;
     box-shadow: 18px 4px 16px var(--color-shadow), 16px -4px 16px var(--color-shadow);
     padding: 32px;
