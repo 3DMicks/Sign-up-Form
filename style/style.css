@@ -132,6 +132,7 @@ input {
     padding: 8px;
     border-radius: 8px;
     border: none;
+    transition-duration: 0.1s;
 }
 
 input:invalid {
